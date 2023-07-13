@@ -1,0 +1,53 @@
+// Este mixin sirve para crear una barra que ocupe todo el ancho de la pantalla
+@mixin define-bar-style($color) {
+	background-color: $color;
+	border-color: black;
+	border-style: solid;
+	border-width: 0px 0px medium 0px;
+}
+
+// Este mixin sirve para crear un bloque redondeado
+@mixin define-box-style($color) {
+	background-color: $color;
+	border-color: black;
+	border-style: solid;
+	border-width: thin;
+	border-radius: 12px;
+}
+
+// Estas clases representan los distintos estilos de bloque del sitio
+.box-title {
+	@include define-bar-style($colors-background);
+}
+
+.box-nav {
+	@include define-bar-style($colors-background-nav);
+}
+
+.box-section {
+	@include define-box-style($colors-background);
+}
+
+.box-item {
+	@include define-box-style($colors-background-box);
+}
+
+.box-clickable-item {
+	@include define-box-style($colors-background-box);
+	transition-duration: 250ms;
+}
+
+.box-clickable-item:hover {
+	@include define-box-style($colors-background-box-hover);
+	transition-duration: 250ms;
+}
+
+.button-login {
+	@include define-box-style($colors-button-login);
+	border-color: $colors-button-login
+}
+
+.button-login:hover {
+	@include define-box-style($colors-button-login-hover);
+	border-color: black;
+}

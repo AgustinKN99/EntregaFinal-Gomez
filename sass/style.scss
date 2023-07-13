@@ -1,7 +1,15 @@
 * {
 	margin: 0;
 	padding: 0;
+	line-height: 1em;
+}
+
+a {
+	text-decoration: none;
 }
 
 @import 'values.scss';
-@import 'structure.scss';
+@import 'text-style.scss';
+@import 'box-style.scss';
+@import 'containers.scss';
+@import 'misc-properties';

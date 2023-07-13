@@ -1,0 +1,111 @@
+// Este mixin se encarga de crear un contenedor flex
+@mixin define-flex($flex-direction, $justify-content: space-around) {
+	display: flex;
+	flex-direction: $flex-direction;
+	justify-content: $justify-content;
+	align-items: center;
+}
+
+// Este mixin se encarga de ponerle un margen horizontal al contenedor
+@mixin horizontal-margin($vertical-margin) {
+	width: 95%;
+	margin: $vertical-margin auto;
+}
+
+// Reiniciar valores
+body {
+	background-color: $colors-background;
+}
+
+// Estas clases representan los contenedores de información del sitio
+.container-nav {
+	@include define-flex(row, flex-end);
+}
+
+.container-nav__item {
+	margin: 10px 24px;
+}
+
+.container-section {
+	@include horizontal-margin(30px);
+}
+
+.container-section__title {
+	@include horizontal-margin(24px);
+}
+
+.container-section__item {
+	@include horizontal-margin(18px);
+}
+
+.container-section__faq-item {
+	@include horizontal-margin(18px);
+}
+
+.container-article {
+	@include define-flex(row);
+	@include horizontal-margin(6px);
+}
+
+.container-article__title-width {
+	@include define-flex(row);
+	width: 60%;
+}
+
+.container-article__last-message-width {
+	@include define-flex(row);
+	width: 40%;
+}
+
+.container-article__half-width {
+	@include define-flex(row);
+	width: 50%;
+}
+
+.container-article__full-width {
+	@include define-flex(row);
+	width: 100%;
+}
+
+.container-article-column__icon {
+	width: 48px;
+	height: 48px;
+}
+
+.container-article-column__text {
+	@include define-flex(column, flex-center);
+	align-items: start;
+	width: calc(100% - 60px);
+}
+
+.container-article-column__user-contact {
+	display: grid;
+    grid-template: "n n n n n" ". a b c d";
+	width: calc(100% - 60px);
+}
+
+.container-contact-n {
+	grid-area: n;
+}
+
+.container-contact-a {
+	grid-area: a;
+}
+
+.container-contact-b {
+	grid-area: b;
+}
+
+.container-contact-c {
+	grid-area: c;
+}
+
+.container-contact-d {
+	grid-area: d;
+}
+
+@media (max-width: 700px) {
+	.container-section__faq-item {
+		@include horizontal-margin(48px);
+	}
+}

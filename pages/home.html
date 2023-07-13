@@ -12,190 +12,259 @@
 		<title>Foro guías — Temas</title>
 	</head>
 	<body>
-		<header class="site-header">
+		<header class="text-title box-title unselectable">
 			<h1>Foro guías</h1>
 		</header>
-		<nav class="reference-section">
-			<a class="reference-section__element clickable-text font-nav" href="home.html">Inicio</a>	
-			<a class="reference-section__element clickable-text font-nav" href="faq.html">FAQs</a>
-			<a class="reference-section__element clickable-text font-nav" href="contact.html">Contacto</a>
-			<a class="reference-section__element clickable-text font-nav" href="login.html">Iniciar sesión</a>
+		<nav class="box-nav container-nav unselectable">
+			<a class="text-nav-current container-nav__item single-line" href="home.html">Inicio</a>
+			<a class="text-nav container-nav__item single-line" href="faq.html">FAQs</a>
+			<a class="text-nav container-nav__item single-line" href="contact.html">Contacto</a>
+			<a class="text-nav container-nav__item single-line" href="login.html">Iniciar sesión</a>
 		</nav>
-		<section class="content-block">
-			<h2 class="content-block__element content-block__title">Temas fijados</h2>
-			<article class="topic-block topic-block__selectable">
-				<div class="topic-block__container">
-					<!-- Mostrar dos columnas en pantalla grande -->
-					<div class="topic-block__element topic-block__element--title">
-						<img class="topic-block__icon" src="../resources/forum_icon.png" alt="Icono de tópico">
-						<div class="topic-block__text-container">
-							<span class="topic-block__text topic-block__text--title">Título del tema</span>
-							<span class="topic-block__text topic-block__text--body">Primer mensaje: «username666»</span>
-							<span class="topic-block__text topic-block__text--body">Fecha: 26/06/2011</span>
+		<!-- Sección de "Temas fijados" -->
+		<section class="box-section container-section">
+			<h2 class="text-section-title container-section__title unselectable">Temas fijados</h2>
+			<a href="messages.html">
+				<article class="box-clickable-item container-section__item unselectable">
+					<div class="container-article">
+						<!-- Columna de título y creador del hilo -->
+						<div class="container-article__title-width wide-only">
+							<img class="container-article-column__icon" src="../resources/forum_icon.png" alt="Icono de tópico">
+							<div class="container-article-column__text single-line">
+								<p class="text-article-title">Título del tema [+]</p>
+								<p class="text-article-body">Creador: «username666»</p>
+								<p class="text-article-body">Fecha: 26/06/2011</p>
+							</div>
+						</div>
+						<!-- Columna de último mensaje -->
+						<div class="container-article__last-message-width wide-only">
+							<img class="container-article-column__icon" src="../resources/user_avatar.png" alt="Avatar de «username666»">
+							<div class="container-article-column__text single-line">
+								<p class="text-article-body">Último: «username666»</p>
+								<p class="text-article-body">Fecha: 09/12/2018</p>
+							</div>
+						</div>
+						<!-- Mostrar una única columna en pantalla chica -->
+						<div class="container-article__full-width small-only">
+							<img class="container-article-column__icon" src="../resources/forum_icon.png" alt="Icono de tópico">
+							<div class="container-article-column__text single-line">
+								<p class="text-article-title">Título del tema [+]</p>
+								<p class="text-article-body">Creador: «username666» 26/06/2011</p>
+								<p class="text-article-body">Último: «username666» 09/12/2018</p>
+							</div>
 						</div>
 					</div>
-					<div class="topic-block__element topic-block__element--last-message">
-						<img class="topic-block__icon" src="../resources/user_avatar.png" alt="Avatar de «username666»">
-						<div class="topic-block__text-container">
-							<p class="topic-block__text topic-block__text--body">Último mensaje: «username666»</p>
-							<p class="topic-block__text topic-block__text--body">Fecha: 09/12/2018</p>
+				</article>
+			</a>
+			<article class="box-clickable-item container-section__item unselectable">
+				<div class="container-article">
+					<!-- Columna de título y creador del hilo -->
+					<div class="container-article__title-width wide-only">
+						<img class="container-article-column__icon" src="../resources/forum_icon.png" alt="Icono de tópico">
+						<div class="container-article-column__text single-line">
+							<p class="text-article-title">Título del tema</p>
+							<p class="text-article-body">Creador: «username666»</p>
+							<p class="text-article-body">Fecha: 26/06/2011</p>
+						</div>
+					</div>
+					<!-- Columna de último mensaje -->
+					<div class="container-article__last-message-width wide-only">
+						<img class="container-article-column__icon" src="../resources/user_avatar.png" alt="Avatar de «username666»">
+						<div class="container-article-column__text single-line">
+							<p class="text-article-body">Último: «username666»</p>
+							<p class="text-article-body">Fecha: 09/12/2018</p>
 						</div>
 					</div>
 					<!-- Mostrar una única columna en pantalla chica -->
-					<div class="topic-block__element topic-block__element--single-column">
-						<img class="topic-block__icon" src="../resources/forum_icon.png" alt="Icono de tópico">
-						<div class="topic-block__text-container">
-							<p class="topic-block__text topic-block__text--title">Título del tema</p>
-							<p class="topic-block__text topic-block__text--body">Creador: «username666» 26/06/2011</p>
-							<p class="topic-block__text topic-block__text--body">Último: «username666» 09/12/2018</p>
+					<div class="container-article__full-width small-only">
+						<img class="container-article-column__icon" src="../resources/forum_icon.png" alt="Icono de tópico">
+						<div class="container-article-column__text single-line">
+							<p class="text-article-title">Título del tema</p>
+							<p class="text-article-body">Creador: «username666» 26/06/2011</p>
+							<p class="text-article-body">Último: «username666» 09/12/2018</p>
 						</div>
 					</div>
 				</div>
 			</article>
-			<article class="topic-block topic-block__selectable">
-				<div class="topic-block__container">
-					<!-- Mostrar dos columnas en pantalla grande -->
-					<div class="topic-block__element topic-block__element--title">
-						<img class="topic-block__icon" src="../resources/forum_icon.png" alt="Icono de tópico">
-						<div class="topic-block__text-container">
-							<span class="topic-block__text topic-block__text--title">Título del tema</span>
-							<span class="topic-block__text topic-block__text--body">Primer mensaje: «username666»</span>
-							<span class="topic-block__text topic-block__text--body">Fecha: 26/06/2011</span>
+			<article class="box-clickable-item container-section__item unselectable">
+				<div class="container-article">
+					<!-- Columna de título y creador del hilo -->
+					<div class="container-article__title-width wide-only">
+						<img class="container-article-column__icon" src="../resources/forum_icon.png" alt="Icono de tópico">
+						<div class="container-article-column__text single-line">
+							<p class="text-article-title">Título del tema</p>
+							<p class="text-article-body">Creador: «username666»</p>
+							<p class="text-article-body">Fecha: 26/06/2011</p>
 						</div>
 					</div>
-					<div class="topic-block__element topic-block__element--last-message">
-						<img class="topic-block__icon" src="../resources/user_avatar.png" alt="Avatar de «username666»">
-						<div class="topic-block__text-container">
-							<p class="topic-block__text topic-block__text--body">Último mensaje: «username666»</p>
-							<p class="topic-block__text topic-block__text--body">Fecha: 09/12/2018</p>
-						</div>
-					</div>
-					<!-- Mostrar una única columna en pantalla chica -->
-					<div class="topic-block__element topic-block__element--single-column">
-						<img class="topic-block__icon" src="../resources/forum_icon.png" alt="Icono de tópico">
-						<div class="topic-block__text-container">
-							<p class="topic-block__text topic-block__text--title">Título del tema</p>
-							<p class="topic-block__text topic-block__text--body">Creador: «username666» 26/06/2011</p>
-							<p class="topic-block__text topic-block__text--body">Último: «username666» 09/12/2018</p>
-						</div>
-					</div>
-				</div>
-			</article>
-			<article class="topic-block topic-block__selectable">
-				<div class="topic-block__container">
-					<!-- Mostrar dos columnas en pantalla grande -->
-					<div class="topic-block__element topic-block__element--title">
-						<img class="topic-block__icon" src="../resources/forum_icon.png" alt="Icono de tópico">
-						<div class="topic-block__text-container">
-							<span class="topic-block__text topic-block__text--title">Título del tema</span>
-							<span class="topic-block__text topic-block__text--body">Primer mensaje: «username666»</span>
-							<span class="topic-block__text topic-block__text--body">Fecha: 26/06/2011</span>
-						</div>
-					</div>
-					<div class="topic-block__element topic-block__element--last-message">
-						<img class="topic-block__icon" src="../resources/user_avatar.png" alt="Avatar de «username666»">
-						<div class="topic-block__text-container">
-							<p class="topic-block__text topic-block__text--body">Último mensaje: «username666»</p>
-							<p class="topic-block__text topic-block__text--body">Fecha: 09/12/2018</p>
+					<!-- Columna de último mensaje -->
+					<div class="container-article__last-message-width wide-only">
+						<img class="container-article-column__icon" src="../resources/user_avatar.png" alt="Avatar de «username666»">
+						<div class="container-article-column__text single-line">
+							<p class="text-article-body">Último: «username666»</p>
+							<p class="text-article-body">Fecha: 09/12/2018</p>
 						</div>
 					</div>
 					<!-- Mostrar una única columna en pantalla chica -->
-					<div class="topic-block__element topic-block__element--single-column">
-						<img class="topic-block__icon" src="../resources/forum_icon.png" alt="Icono de tópico">
-						<div class="topic-block__text-container">
-							<p class="topic-block__text topic-block__text--title">Título del tema</p>
-							<p class="topic-block__text topic-block__text--body">Creador: «username666» 26/06/2011</p>
-							<p class="topic-block__text topic-block__text--body">Último: «username666» 09/12/2018</p>
+					<div class="container-article__full-width small-only">
+						<img class="container-article-column__icon" src="../resources/forum_icon.png" alt="Icono de tópico">
+						<div class="container-article-column__text single-line">
+							<p class="text-article-title">Título del tema</p>
+							<p class="text-article-body">Creador: «username666» 26/06/2011</p>
+							<p class="text-article-body">Último: «username666» 09/12/2018</p>
 						</div>
 					</div>
 				</div>
 			</article>
 		</section>
-		<section class="content-block">
-			<h2 class="content-block__element content-block__title">Todos los temas</h2>
-			<article class="topic-block topic-block__selectable">
-				<div class="topic-block__container">
-					<!-- Mostrar dos columnas en pantalla grande -->
-					<div class="topic-block__element topic-block__element--title">
-						<img class="topic-block__icon" src="../resources/forum_icon.png" alt="Icono de tópico">
-						<div class="topic-block__text-container">
-							<span class="topic-block__text topic-block__text--title">Título del tema</span>
-							<span class="topic-block__text topic-block__text--body">Primer mensaje: «username666»</span>
-							<span class="topic-block__text topic-block__text--body">Fecha: 26/06/2011</span>
+		<section class="box-section container-section">
+			<h2 class="text-section-title container-section__title unselectable">Todos los temas</h2>
+			<article class="box-clickable-item container-section__item unselectable">
+				<div class="container-article">
+					<!-- Columna de título y creador del hilo -->
+					<div class="container-article__title-width wide-only">
+						<img class="container-article-column__icon" src="../resources/forum_icon.png" alt="Icono de tópico">
+						<div class="container-article-column__text single-line">
+							<p class="text-article-title">Título del tema</p>
+							<p class="text-article-body">Creador: «username666»</p>
+							<p class="text-article-body">Fecha: 26/06/2011</p>
 						</div>
 					</div>
-					<div class="topic-block__element topic-block__element--last-message">
-						<img class="topic-block__icon" src="../resources/user_avatar.png" alt="Avatar de «username666»">
-						<div class="topic-block__text-container">
-							<p class="topic-block__text topic-block__text--body">Último mensaje: «username666»</p>
-							<p class="topic-block__text topic-block__text--body">Fecha: 09/12/2018</p>
+					<!-- Columna de último mensaje -->
+					<div class="container-article__last-message-width wide-only">
+						<img class="container-article-column__icon" src="../resources/user_avatar.png" alt="Avatar de «username666»">
+						<div class="container-article-column__text single-line">
+							<p class="text-article-body">Último: «username666»</p>
+							<p class="text-article-body">Fecha: 09/12/2018</p>
 						</div>
 					</div>
 					<!-- Mostrar una única columna en pantalla chica -->
-					<div class="topic-block__element topic-block__element--single-column">
-						<img class="topic-block__icon" src="../resources/forum_icon.png" alt="Icono de tópico">
-						<div class="topic-block__text-container">
-							<p class="topic-block__text topic-block__text--title">Título del tema</p>
-							<p class="topic-block__text topic-block__text--body">Creador: «username666» 26/06/2011</p>
-							<p class="topic-block__text topic-block__text--body">Último: «username666» 09/12/2018</p>
+					<div class="container-article__full-width small-only">
+						<img class="container-article-column__icon" src="../resources/forum_icon.png" alt="Icono de tópico">
+						<div class="container-article-column__text single-line">
+							<p class="text-article-title">Título del tema</p>
+							<p class="text-article-body">Creador: «username666» 26/06/2011</p>
+							<p class="text-article-body">Último: «username666» 09/12/2018</p>
 						</div>
 					</div>
 				</div>
 			</article>
-			<article class="topic-block topic-block__selectable">
-				<div class="topic-block__container">
-					<!-- Mostrar dos columnas en pantalla grande -->
-					<div class="topic-block__element topic-block__element--title">
-						<img class="topic-block__icon" src="../resources/forum_icon.png" alt="Icono de tópico">
-						<div class="topic-block__text-container">
-							<span class="topic-block__text topic-block__text--title">Título del tema</span>
-							<span class="topic-block__text topic-block__text--body">Primer mensaje: «username666»</span>
-							<span class="topic-block__text topic-block__text--body">Fecha: 26/06/2011</span>
+			<article class="box-clickable-item container-section__item unselectable">
+				<div class="container-article">
+					<!-- Columna de título y creador del hilo -->
+					<div class="container-article__title-width wide-only">
+						<img class="container-article-column__icon" src="../resources/forum_icon.png" alt="Icono de tópico">
+						<div class="container-article-column__text single-line">
+							<p class="text-article-title">Título del tema</p>
+							<p class="text-article-body">Creador: «username666»</p>
+							<p class="text-article-body">Fecha: 26/06/2011</p>
 						</div>
 					</div>
-					<div class="topic-block__element topic-block__element--last-message">
-						<img class="topic-block__icon" src="../resources/user_avatar.png" alt="Avatar de «username666»">
-						<div class="topic-block__text-container">
-							<p class="topic-block__text topic-block__text--body">Último mensaje: «username666»</p>
-							<p class="topic-block__text topic-block__text--body">Fecha: 09/12/2018</p>
+					<!-- Columna de último mensaje -->
+					<div class="container-article__last-message-width wide-only">
+						<img class="container-article-column__icon" src="../resources/user_avatar.png" alt="Avatar de «username666»">
+						<div class="container-article-column__text single-line">
+							<p class="text-article-body">Último: «username666»</p>
+							<p class="text-article-body">Fecha: 09/12/2018</p>
 						</div>
 					</div>
 					<!-- Mostrar una única columna en pantalla chica -->
-					<div class="topic-block__element topic-block__element--single-column">
-						<img class="topic-block__icon" src="../resources/forum_icon.png" alt="Icono de tópico">
-						<div class="topic-block__text-container">
-							<p class="topic-block__text topic-block__text--title">Título del tema</p>
-							<p class="topic-block__text topic-block__text--body">Creador: «username666» 26/06/2011</p>
-							<p class="topic-block__text topic-block__text--body">Último: «username666» 09/12/2018</p>
+					<div class="container-article__full-width small-only">
+						<img class="container-article-column__icon" src="../resources/forum_icon.png" alt="Icono de tópico">
+						<div class="container-article-column__text single-line">
+							<p class="text-article-title">Título del tema</p>
+							<p class="text-article-body">Creador: «username666» 26/06/2011</p>
+							<p class="text-article-body">Último: «username666» 09/12/2018</p>
 						</div>
 					</div>
 				</div>
 			</article>
-			<article class="topic-block topic-block__selectable">
-				<div class="topic-block__container">
-					<!-- Mostrar dos columnas en pantalla grande -->
-					<div class="topic-block__element topic-block__element--title">
-						<img class="topic-block__icon" src="../resources/forum_icon.png" alt="Icono de tópico">
-						<div class="topic-block__text-container">
-							<span class="topic-block__text topic-block__text--title">Título del tema</span>
-							<span class="topic-block__text topic-block__text--body">Primer mensaje: «username666»</span>
-							<span class="topic-block__text topic-block__text--body">Fecha: 26/06/2011</span>
+			<article class="box-clickable-item container-section__item unselectable">
+				<div class="container-article">
+					<!-- Columna de título y creador del hilo -->
+					<div class="container-article__title-width wide-only">
+						<img class="container-article-column__icon" src="../resources/forum_icon.png" alt="Icono de tópico">
+						<div class="container-article-column__text single-line">
+							<p class="text-article-title">Título del tema</p>
+							<p class="text-article-body">Creador: «username666»</p>
+							<p class="text-article-body">Fecha: 26/06/2011</p>
 						</div>
 					</div>
-					<div class="topic-block__element topic-block__element--last-message">
-						<img class="topic-block__icon" src="../resources/user_avatar.png" alt="Avatar de «username666»">
-						<div class="topic-block__text-container">
-							<p class="topic-block__text topic-block__text--body">Último mensaje: «username666»</p>
-							<p class="topic-block__text topic-block__text--body">Fecha: 09/12/2018</p>
+					<!-- Columna de último mensaje -->
+					<div class="container-article__last-message-width wide-only">
+						<img class="container-article-column__icon" src="../resources/user_avatar.png" alt="Avatar de «username666»">
+						<div class="container-article-column__text single-line">
+							<p class="text-article-body">Último: «username666»</p>
+							<p class="text-article-body">Fecha: 09/12/2018</p>
 						</div>
 					</div>
 					<!-- Mostrar una única columna en pantalla chica -->
-					<div class="topic-block__element topic-block__element--single-column">
-						<img class="topic-block__icon" src="../resources/forum_icon.png" alt="Icono de tópico">
-						<div class="topic-block__text-container">
-							<p class="topic-block__text topic-block__text--title">Título del tema</p>
-							<p class="topic-block__text topic-block__text--body">Creador: «username666» 26/06/2011</p>
-							<p class="topic-block__text topic-block__text--body">Último: «username666» 09/12/2018</p>
+					<div class="container-article__full-width small-only">
+						<img class="container-article-column__icon" src="../resources/forum_icon.png" alt="Icono de tópico">
+						<div class="container-article-column__text single-line">
+							<p class="text-article-title">Título del tema</p>
+							<p class="text-article-body">Creador: «username666» 26/06/2011</p>
+							<p class="text-article-body">Último: «username666» 09/12/2018</p>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="box-clickable-item container-section__item unselectable">
+				<div class="container-article">
+					<!-- Columna de título y creador del hilo -->
+					<div class="container-article__title-width wide-only">
+						<img class="container-article-column__icon" src="../resources/forum_icon.png" alt="Icono de tópico">
+						<div class="container-article-column__text single-line">
+							<p class="text-article-title">Título del tema</p>
+							<p class="text-article-body">Creador: «username666»</p>
+							<p class="text-article-body">Fecha: 26/06/2011</p>
+						</div>
+					</div>
+					<!-- Columna de último mensaje -->
+					<div class="container-article__last-message-width wide-only">
+						<img class="container-article-column__icon" src="../resources/user_avatar.png" alt="Avatar de «username666»">
+						<div class="container-article-column__text single-line">
+							<p class="text-article-body">Último: «username666»</p>
+							<p class="text-article-body">Fecha: 09/12/2018</p>
+						</div>
+					</div>
+					<!-- Mostrar una única columna en pantalla chica -->
+					<div class="container-article__full-width small-only">
+						<img class="container-article-column__icon" src="../resources/forum_icon.png" alt="Icono de tópico">
+						<div class="container-article-column__text single-line">
+							<p class="text-article-title">Título del tema</p>
+							<p class="text-article-body">Creador: «username666» 26/06/2011</p>
+							<p class="text-article-body">Último: «username666» 09/12/2018</p>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="box-clickable-item container-section__item unselectable">
+				<div class="container-article">
+					<!-- Columna de título y creador del hilo -->
+					<div class="container-article__title-width wide-only">
+						<img class="container-article-column__icon" src="../resources/forum_icon.png" alt="Icono de tópico">
+						<div class="container-article-column__text single-line">
+							<p class="text-article-title">Título del tema</p>
+							<p class="text-article-body">Creador: «username666»</p>
+							<p class="text-article-body">Fecha: 26/06/2011</p>
+						</div>
+					</div>
+					<!-- Columna de último mensaje -->
+					<div class="container-article__last-message-width wide-only">
+						<img class="container-article-column__icon" src="../resources/user_avatar.png" alt="Avatar de «username666»">
+						<div class="container-article-column__text single-line">
+							<p class="text-article-body">Último: «username666»</p>
+							<p class="text-article-body">Fecha: 09/12/2018</p>
+						</div>
+					</div>
+					<!-- Mostrar una única columna en pantalla chica -->
+					<div class="container-article__full-width small-only">
+						<img class="container-article-column__icon" src="../resources/forum_icon.png" alt="Icono de tópico">
+						<div class="container-article-column__text single-line">
+							<p class="text-article-title">Título del tema</p>
+							<p class="text-article-body">Creador: «username666» 26/06/2011</p>
+							<p class="text-article-body">Último: «username666» 09/12/2018</p>
 						</div>
 					</div>
 				</div>

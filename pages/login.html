@@ -5,36 +5,73 @@
 		<meta name="description" content="Inicia sesión para poder participar de las discusiones." />
 		<meta name="keywords" content="juego, videojuego, guía, técnicas, speedrun, gaming, español"/>
 		<link rel="icon" type="image/x-icon" href="resources/icons/icon.ico">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-		<link rel="stylesheet" href="../css/style.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="../css/style.css">
 		<title>Foro guías — Iniciar sesión</title>
 	</head>
 	<body>
-		<header class="site-header">
-			<h1>Iniciar sesión</h1>
+		<header class="text-title box-title unselectable">
+			<h1>Foro guías</h1>
 		</header>
-		<section class="reference-section">
-			<a class="reference-section__element clickable-text font-nav" href="home.html">Inicio</a>
-			<a class="reference-section__element clickable-text font-nav" href="faq.html">FAQs</a>
-			<a class="reference-section__element clickable-text font-nav" href="contact.html">Contacto</a>
-			<a class="reference-section__element clickable-text font-nav" href="login.html">Iniciar sesión</a>
+		<nav class="box-nav container-nav unselectable">
+			<a class="text-nav container-nav__item single-line" href="home.html">Inicio</a>
+			<a class="text-nav container-nav__item single-line" href="faq.html">FAQs</a>
+			<a class="text-nav container-nav__item single-line" href="contact.html">Contacto</a>
+			<a class="text-nav-current container-nav__item single-line" href="login.html">Iniciar sesión</a>
+		</nav>
+		<section class="box-section container-section">
+			<div class="container-section">
+				<h2 class="text-section-title container-section__title unselectable">Iniciar sesión</h2>
+				<div class="box-section container-section">
+					<div class="container-section">
+						<form>
+							<div class="form-group my-3">
+								<label class="text-article-title" for="exampleInputEmail1">Nombre de usuario</label>
+								<input type="email" class="form-control text-article-body" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="@username666">
+							</div>
+							<div class="form-group my-3">
+								<label class="text-article-title" for="exampleInputPassword1">Contraseña</label>
+								<input type="password" class="form-control text-article-body" id="exampleInputPassword1" placeholder="*******">
+							</div>
+							<button type="submit" class="btn btn-primary my-3 text-button-login button-login">Iniciar sesión</button>
+						</form>
+					</div>
+				</div>
+			</div>
 		</section>
-		<section class="content-block">
-			<div class="login-container">
-				<form>
-					<div class="form-group my-3">
-						<label for="exampleInputEmail1">Nombre de usuario</label>
-						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="@username666">
+		<section class="box-section container-section">
+			<div class="container-section">
+				<h2 class="text-section-title container-section__title unselectable">Nueva cuenta</h2>
+				<div class="box-section container-section">
+					<div class="container-section">
+						<form>
+							<div class="form-group my-3">
+								<label class="text-article-title" for="input-username">Nombre de usuario</label>
+								<input type="text" class="form-control text-article-body" id="input-username" aria-describedby="emailHelp" placeholder="@username666">
+							</div>
+							<div class="form-group my-3">
+								<label class="text-article-title" for="input-email-1">Correo electrónico</label>
+								<input type="email" class="form-control text-article-body" id="input-email-1" placeholder="nombre@nnn.com">
+							</div>
+							<div class="form-group my-3">
+								<label class="text-article-title" for="input-email-2">Confirmar correo electrónico</label>
+								<input type="email" class="form-control text-article-body" id="input-email-2" placeholder="nombre@nnn.com">
+							</div>
+							<div class="form-group my-3">
+								<label class="text-article-title" for="input-password-1">Contraseña</label>
+								<input type="password" class="form-control text-article-body" id="input-password-1" placeholder="*******">
+							</div>
+							<div class="form-group my-3">
+								<label class="text-article-title" for="input-password-2">Confirmar contraseña</label>
+								<input type="password" class="form-control text-article-body" id="input-password-2" placeholder="*******">
+							</div>
+							<button type="submit" class="btn btn-primary my-3 text-button-login button-login">Crear cuenta</button>
+						</form>
 					</div>
-					<div class="form-group my-3">
-						<label for="exampleInputPassword1">Contraseña</label>
-						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="*******">
-					</div>
-					<button type="submit" class="btn btn-primary my-3 login-button">Iniciar sesión</button>
-				</form>
+				</div>
 			</div>
 		</section>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>

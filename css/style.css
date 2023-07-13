@@ -1,261 +1,377 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Bree Serif", serif;
+}
+
+h1 {
+
+}
+
+a {
   text-decoration: none;
 }
 
-/* Todos los colores que se van a usar en el sitio. */
-/* Todas las fuentes que se usan en el sitio. */
+.text-title {
+  font-family: "Bree Serif", serif;
+  color: black;
+  font-size: 220%;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 4em;
+}
+
+.text-nav {
+  font-family: "Titillium Web", sans-serif;
+  color: #04261A;
+  font-size: 130%;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 3em;
+}
+
+.text-nav:hover {
+  font-family: "Titillium Web", sans-serif;
+  color: #F3F779;
+  font-size: 130%;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+  line-height: 3em;
+}
+
+.text-nav-current {
+  font-family: "Titillium Web", sans-serif;
+  color: #04261A;
+  font-size: 130%;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+  line-height: 3em;
+}
+
+.text-nav-current:hover {
+  font-family: "Titillium Web", sans-serif;
+  color: #F3F779;
+  font-size: 130%;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+  line-height: 3em;
+}
+
+.text-section-title {
+  font-family: "Bree Serif", serif;
+  color: black;
+  font-size: 300%;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.text-section-body {
+  font-family: "Bree Serif", serif;
+  color: black;
+  font-size: 120%;
+  text-align: start;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.text-article-title {
+  font-family: "Bree Serif", serif;
+  color: black;
+  font-size: 200%;
+  text-align: start;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.text-article-body {
+  font-family: "Bree Serif", serif;
+  color: black;
+  font-size: 110%;
+  text-align: start;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.text-article-link {
+  font-family: "Bree Serif", serif;
+  color: #04261A;
+  font-size: 110%;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 2em;
+}
+
+.text-article-link:hover {
+  font-family: "Bree Serif", serif;
+  color: #04261A;
+  font-size: 110%;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+  line-height: 2em;
+}
+
+.text-faq-title {
+  font-family: "Bree Serif", serif;
+  color: #083D33;
+  font-size: 130%;
+  text-align: start;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.text-faq-title:hover {
+  text-decoration: underline;
+}
+
+.text-button-login {
+  font-family: "Bree Serif", serif;
+  color: white;
+  font-size: 120%;
+  text-align: start;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.text-button-login:hover {
+  font-family: "Bree Serif", serif;
+  color: black;
+  font-size: 120%;
+  text-align: start;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .text-section-body {
+    font-size: 150%;
+  }
+  .text-article-body {
+    font-size: 140%;
+  }
+  .text-faq-title {
+    font-size: 160%;
+  }
+  .text-faq-title:hover {
+    font-size: 160%;
+  }
+}
+.box-title {
+  background-color: #C6FFD1;
+  border-color: black;
+  border-style: solid;
+  border-width: 0px 0px medium 0px;
+}
+
+.box-nav {
+  background-color: #3CAD85;
+  border-color: black;
+  border-style: solid;
+  border-width: 0px 0px medium 0px;
+}
+
+.box-section {
+  background-color: #C6FFD1;
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 12px;
+}
+
+.box-item {
+  background-color: white;
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 12px;
+}
+
+.box-clickable-item {
+  background-color: white;
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 12px;
+  transition-duration: 250ms;
+}
+
+.box-clickable-item:hover {
+  background-color: #FFD9AE;
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 12px;
+  transition-duration: 250ms;
+}
+
+.button-login {
+  background-color: #052626;
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 12px;
+  border-color: #052626;
+}
+
+.button-login:hover {
+  background-color: #F3F779;
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 12px;
+  border-color: black;
+}
+
 body {
   background-color: #C6FFD1;
 }
 
-.font-nav {
-  font-family: "Titillium Web", sans-serif;
-}
-
-.clickable-text {
-  color: #04261A;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.clickable-text:hover {
-  color: #F3F779;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-.clickable-faq-text {
-  color: #083D33;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.clickable-faq-text:hover {
-  color: #083D33;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-.site-header {
-  font-size: 200%;
-  border-style: solid;
-  border-width: 0px 0px 2px 0px;
-  text-align: center;
-  padding: 32px 0px 32px 0px;
-}
-
-.reference-section {
-  background-color: #3CAD85;
+.container-nav {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  width: 100%;
-  padding: 24px 0px 24px 0px;
-  border-style: solid;
-  border-width: 0px 0px 2px 0px;
 }
 
-.reference-section__element {
-  font-size: 120%;
-  margin-left: 30px;
-  width: 15%;
-  height: 100%;
+.container-nav__item {
+  margin: 10px 24px;
 }
 
-.content-block {
-  background-color: #C6FFD1;
-  border-style: solid;
-  border-radius: 12px;
-  border-width: 1px;
+.container-section {
   width: 95%;
-  margin: 24px 2.5% 24px 2.5%;
+  margin: 30px auto;
 }
 
-.content-block__element {
-  margin: 20px 5% 20px 5%;
-}
-
-.content-block__title {
-  text-align: center;
-  font-size: 250%;
-}
-
-.content-block__paragraph {
-  padding: 15px 0px 15px 0px;
-}
-
-.topic-block {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  background-color: white;
+.container-section__title {
   width: 95%;
-  height: 96px;
-  border-style: solid;
-  border-radius: 12px;
-  border-width: 1px;
-  padding: 0px;
-  margin: 20px 2.5% 20px 2.5%;
+  margin: 24px auto;
 }
 
-.topic-block__container {
+.container-section__item {
+  width: 95%;
+  margin: 18px auto;
+}
+
+.container-section__faq-item {
+  width: 95%;
+  margin: 18px auto;
+}
+
+.container-article {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  width: 95%;
+  margin: 6px auto;
 }
 
-.topic-block__text-container {
+.container-article__title-width {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: calc(100% - 48px);
-  height: 100%;
-}
-
-.topic-block__element {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: nowrap;
+  width: 60%;
 }
 
-.topic-block__element--title {
+.container-article__last-message-width {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+}
+
+.container-article__half-width {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   width: 50%;
 }
 
-.topic-block__element--last-message {
+.container-article__full-width {
   display: flex;
-  width: 45%;
-}
-
-.topic-block__element--single-column {
-  display: none;
-  width: 95%;
-}
-
-.topic-block__element--contact {
-  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
 }
 
-.topic-block__icon {
-  display: block;
+.container-article-column__icon {
   width: 48px;
   height: 48px;
 }
 
-.topic-block__text {
+.container-article-column__text {
   display: flex;
   flex-direction: column;
-  margin-left: 5px;
+  justify-content: flex-center;
+  align-items: center;
+  align-items: start;
+  width: calc(100% - 60px);
+}
+
+.container-article-column__user-contact {
+  display: grid;
+  grid-template: "n n n n n" ". a b c d";
+  width: calc(100% - 60px);
+}
+
+.container-contact-n {
+  grid-area: n;
+}
+
+.container-contact-a {
+  grid-area: a;
+}
+
+.container-contact-b {
+  grid-area: b;
+}
+
+.container-contact-c {
+  grid-area: c;
+}
+
+.container-contact-d {
+  grid-area: d;
+}
+
+@media (max-width: 700px) {
+  .container-section__faq-item {
+    width: 95%;
+    margin: 48px auto;
+  }
+}
+.wide-only {
+  display: flex;
+}
+
+.small-only {
+  display: none;
+}
+
+.single-line {
   white-space: nowrap;
   overflow: hidden;
 }
 
-.topic-block__text--title {
-  font-size: 200%;
-  font-weight: bold;
-  height: 40%;
+.unselectable {
+  user-select: none;
 }
 
-.topic-block__text--body {
-  font-size: 110%;
-  height: 20%;
-}
-
-.topic-block__text--op {
-  height: 30%;
-}
-
-.topic-block__text--last-message {
-  height: 80%;
-}
-
-.topic-block_text--single-column {
-  height: 80%;
-}
-
-.topic-block__selectable {
-  transition-duration: 0.75s;
-  background-color: white;
-}
-
-.topic-block__selectable:hover {
-  transition-duration: 0.75s;
-  background-color: #FFD9AE;
-}
-
-.user-contact-container {
-  display: grid;
-  grid-template: "n n n n n" ". a b c d";
-  width: calc(95% - 48px);
-  height: 100%;
-}
-
-.user-contact-n {
-  grid-area: n;
-}
-
-.user-contact-a {
-  grid-area: a;
-}
-
-.user-contact-b {
-  grid-area: b;
-}
-
-.user-contact-c {
-  grid-area: c;
-}
-
-.user-contact-d {
-  grid-area: d;
-}
-
-.login-container {
-  width: 95%;
-  height: 95%;
-  margin: 2.5%;
-}
-
-.login-title {
-  margin: 20px 5px 5px 5px;
-}
-
-.login-button {
-  color: white;
-  background-color: #052626;
-  border-color: #052626;
-}
-
-.login-button:hover {
-  color: black;
-  background-color: #F3F779;
-  border-color: black;
-}
-
-@media (max-width: 640px) {
-  .topic-block {
-    height: 96px;
-  }
-  .reference-section__element {
-    width: 25%;
-  }
-  .topic-block__element--title {
+@media (max-width: 700px) {
+  .wide-only {
     display: none;
   }
-  .topic-block__element--last-message {
-    display: none;
-  }
-  .topic-block__element--single-column {
+  .small-only {
     display: flex;
   }
 }
