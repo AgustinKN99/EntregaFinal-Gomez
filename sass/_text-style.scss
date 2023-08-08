@@ -1,0 +1,125 @@
+// Este mixin sirve para crear un estilo de texto
+@mixin define-text-style($font, $color, $size, $centered, $bold, $underlined) {
+	font-family: $font;
+	color: $color;
+	font-size: $size;
+	@if ($centered) {
+		text-align: center;
+	} @else {
+		text-align: start;
+	}
+	@if ($bold) {
+		font-weight: bold;
+	} @else {
+		font-weight: normal;
+	}
+	@if ($underlined) {
+		text-decoration: underline;
+	} @else {
+		text-decoration: none;
+	}
+}
+
+// Estas clases hacen referencia a un estilo de texto
+.text-title {
+	@include define-text-style($fonts-regular, $colors-text-regular, 220%, true, true, false);
+	line-height: 3.0em;
+}
+
+.text-nav {
+	@include define-text-style($fonts-nav, $colors-text-nav, 130%, true, true, false);
+
+	&:hover {
+		color: $colors-text-nav-hover;
+		text-decoration: underline;
+	}
+
+	&.current {
+		text-decoration: underline;
+	}
+}
+
+.text-section-title {
+	@include define-text-style($fonts-regular, $colors-text-regular, 300%, true, true, false);
+}
+
+.text-section-body {
+	@include define-text-style($fonts-regular, $colors-text-regular, 130%, false, false, false);
+}
+
+.text-article-title {
+	@include define-text-style($fonts-regular, $colors-text-regular, 180%, false, true, false);
+	padding: 4px 0px;
+}
+
+.text-article-body {
+	@include define-text-style($fonts-regular, $colors-text-regular, 120%, false, false, false);
+	padding: 4px 0px;
+}
+
+.text-article-link {
+	@include define-text-style($fonts-regular, $colors-text-nav, 110%, true, true, false);
+	line-height: 2.0em;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.text-faq-title {
+	@include define-text-style($fonts-regular, $colors-text-faq, 140%, false, true, false);
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.text-button-login {
+	@include define-text-style($fonts-regular, white, 120%, false, false, false);
+
+	&:hover {
+		color: black;
+	}
+}
+
+@media (max-width: 768px) {
+	.text-title {
+		font-size: 160%;
+	}
+
+	.text-nav {
+		font-size: 100%;
+	}
+
+	.text-nav-current {
+		font-size: 100%;
+	}
+
+	.text-section-title {
+		font-size: 200%;
+	}
+
+	.text-section-body {
+		font-size: 100%;
+	}
+
+	.text-article-title {
+		font-size: 130%
+	}
+
+	.text-article-body {
+		font-size: 100%;
+	}
+
+	.text-article-link {
+		font-size: 90%;
+	}
+
+	.text-faq-title {
+		font-size: 120%;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

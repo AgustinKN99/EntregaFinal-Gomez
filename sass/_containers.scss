@@ -1,0 +1,164 @@
+// Este mixin se encarga de crear un contenedor flex
+@mixin define-flex($flex-direction, $justify-content: space-around, $always-display: true) {
+	@if ($always-display) {
+		display: flex;
+	}
+	flex-direction: $flex-direction;
+	justify-content: $justify-content;
+	align-items: center;
+}
+
+// Este mixin se encarga de ponerle un margen horizontal al contenedor
+@mixin horizontal-margin($vertical-margin) {
+	width: 95%;
+	margin: $vertical-margin auto;
+}
+
+// Reiniciar valores
+body {
+	background-color: $colors-background;
+}
+
+// Estas clases representan los contenedores de información del sitio
+.container-nav {
+	@include define-flex(row, flex-end);
+}
+
+.container-nav__item {
+	padding: 10px 16px;
+}
+
+.container-section {
+	@include horizontal-margin(30px);
+}
+
+.container-section__title {
+	@include horizontal-margin(24px);
+}
+
+.container-section__item {
+	@include horizontal-margin(18px);
+}
+
+.container-section__faq-item {
+	@include horizontal-margin(24px);
+}
+
+.container-article {
+	@include define-flex(row);
+	@include horizontal-margin(6px);
+
+	.title-width {
+		width: 60%;
+	}
+
+	.last-message-width {
+		width: 40%;
+	}
+
+	.half-width {
+		width: 50%;
+	}
+
+	.full-width {
+		width: 100%;
+	}
+}
+
+.column-icon {
+	@include define-flex(column, center);
+	width: 60px;
+}
+
+.column-text {
+	@include define-flex(column, space-between);
+	align-items: start;
+	width: calc(100% - 60px);
+	padding: 3px 0px;
+}
+
+.column-contact {
+	display: grid;
+	grid-template: "n n n n n" ". a b c d";
+	width: calc(100% - 60px);
+}
+
+.column-contact-n {
+	grid-area: n;
+}
+
+.column-contact-a {
+	grid-area: a;
+}
+
+.column-contact-b {
+	grid-area: b;
+}
+
+.column-contact-c {
+	grid-area: c;
+}
+
+.column-contact-d {
+	grid-area: d;
+}
+
+/*
+.container-article__title-width {
+	@include define-flex(row);
+	width: 60%;
+}
+
+.container-article__last-message-width {
+	@include define-flex(row);
+	width: 40%;
+}
+
+.container-article__half-width {
+	@include define-flex(row);
+	width: 50%;
+}
+
+.container-article__full-width {
+	@include define-flex(row);
+	width: 100%;
+}
+
+.container-article-column__icon {
+	width: 48px;
+	height: 48px;
+}
+
+.container-article-column__text {
+	@include define-flex(column, space-between);
+	align-items: start;
+	width: calc(100% - 60px);
+	padding: 3px 0px;
+}
+
+.container-article-column__user-contact {
+	display: grid;
+    grid-template: "n n n n n" ". a b c d";
+	width: calc(100% - 60px);
+}
+
+.container-contact-n {
+	grid-area: n;
+}
+
+.container-contact-a {
+	grid-area: a;
+}
+
+.container-contact-b {
+	grid-area: b;
+}
+
+.container-contact-c {
+	grid-area: c;
+}
+
+.container-contact-d {
+	grid-area: d;
+}
+*/

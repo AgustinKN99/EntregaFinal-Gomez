@@ -1,0 +1,11 @@
+{
+  "name": "Testo",
+  "version": "1.0.0",
+  "description": "Descripción de prueba",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass sass/style.scss css/style.css -w"
+  },
+  "author": "Autor",
+  "license": "ISC"
+}
